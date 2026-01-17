@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+
+<h2>Register</h2>
+
+<form action="/api/register" method="POST" enctype="multipart/form-data">
+  <label>Full Name</label>
+  <input type="text" name="full_name" required>
+
+  <label>Email</label>
+  <input type="email" name="email" required>
+
+  <label>Password</label>
+  <input type="password" name="password" required>
+
+  <label>Profile Image</label>
+  <input type="file" name="image">
+
+  <label>College</label>
+  <input type="text" name="college">
+
+  <label>Hobby</label>
+  <input type="text" name="hobby">
+
+  <label>Phone</label>
+  <input type="text" name="phone">
+
+  <label>Age</label>
+  <input type="number" name="age">
+
+  <label>City</label>
+  <input type="text" name="city">
+
+  <label>GitHub</label>
+  <input type="url" name="github">
+
+  <label>Bio</label>
+  <textarea name="bio"></textarea>
+
+  <button type="submit">Register</button>
+</form>
+
+<p>Already have an account? <a href="/login.html">Login</a></p>
+
+</body>
+</html>
