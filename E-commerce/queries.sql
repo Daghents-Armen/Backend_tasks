@@ -27,5 +27,5 @@ GROUP BY users.id, users.full_name;
 
 SELECT products.id, products.title, SUM(order_items.quantity)
 FROM products INNER JOIN order_items
-ON products.id = order_items.product_id;
+ON products.id = order_items.product_id
 GROUP BY products.id, products.title;
